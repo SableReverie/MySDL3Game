@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/src/main.cpp",
+        "-I", "C:/SDL3-3.4.10/x86_64-w64-mingw32/include",
+        "-L", "C:/SDL3-3.4.10/x86_64-w64-mingw32/lib",
+        "-lSDL3",
+        "-o", "${workspaceFolder}/build/game.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
